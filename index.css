@@ -53,3 +53,7 @@ table {
     /* 枠線の設定 */
     border: 2px solid #000000;
 }
+
+input[type="submit"]:hover{
+    background-color: #e58f0e; 
+}
