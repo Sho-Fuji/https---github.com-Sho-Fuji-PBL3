@@ -9,17 +9,21 @@
 </head>
 <body>
     <div id="form">
-        <form method="GET">
+        <form method="POST" action = "#">
+
+            <!-- 再生リスト入力欄 -->
             <div class="formgroup" id="name-form">
             <label for="name">再生リスト名</label>
             <input type = "text" name = "name" id = "name" class = "ipt" required>
             </div>
     
+            <!-- 検索ワード入力欄 -->
             <div class="formgroup" id="email-form">
             <label for="email">検索ワード</label>
-            <input type="search" id="q" name="q" required  class = "ipt">
+            <input type="search" id="q" name="q" name = "search" required  class = "ipt">
             </div>
     
+            <!-- 絞り込み条件選択欄 -->
             <div class="formgroup" id="email-form">
             <label for="email">絞り込み条件</label>
             <select  class = "ipt" name = "sort" style = "width: 250px; font-weight:bold;">
@@ -28,16 +32,16 @@
               <option value = "commentCount">コメント数</option>
             </select>
             </div>
-    
-            <!-- <div class="flexstyle">
-            <div class="formgroup"> -->
+
+            <!-- 動画数選択・公開設定(テーブルで出力) -->
             <table style = "width: 100%;">
             <tr>
                 <td><label>動画数</label></td>
                 <td><label>公開設定</label></td>
             </tr>
             <tr>
-                <td><input  class = "ipt" type="number" id="maxResults" name="maxResults" min="1" max="50" step="1" value="1" style = "font-weight:bold;"></td>
+                <!-- 動画数は「1」から「50」までとする -->
+                <td><input  class = "ipt" name = "num" type="number" id="maxResults" name="maxResults" min="1" max="50" step="1" value="1" style = "font-weight:bold;"></td>
                 <td>       
                     <select name = "range"  class = "ipt" style = "font-weight:bold; width: 120px;">
                     <option value = "public">公開</option>
@@ -46,23 +50,9 @@
                 </select></td>
             </tr>
         </table>
-            <!-- </div>
-            <div class="formgroup">
-                
-                </div>
-
-            <div class="formgroup" id="name-form">
-                
-            </div>
-            </table>
-            
-    
-            <div class="formgroup" id="name-form">
-     
-            </label>
-            </div>
-            </div> -->
             <br>
+            
+            <!-- 送信ボタン -->
             <input type = "submit" value = "作 　成" id = "btn">
             <!-- <a href= "https://forms.gle/ihwJpM8ikRVmM1xd6" target="_blank" >意見フォーム</a> -->
         </form>

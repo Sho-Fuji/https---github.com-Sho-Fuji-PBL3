@@ -1,45 +1,55 @@
+/* 全体のCSS */
 body, html{
-    /* height: 100%; */
+    /* 上余白を設定 */
     padding-top: 5px;
+    /* 左余白を設定 */
     padding-left: 1%;
+    /* 右余白を設定 */
     padding-right: 1%;
+    /* 下余白を設定 */
     padding-bottom: 5px;
-    /* margin-right: 30px;
-    margin-left: 30px; */
+    /* マージン余白はなし */
     margin: 0;
+    /* フォント名変更 */
     font-family: 'Kiwi Maru', serif;
     font-family: 'Potta One', cursive;
     font-family: 'Zen Maru Gothic', sans-serif;
+    /* フォントサイズ変更 */
     font-size: 62.5%;
+    /* 背景色変更 */
     background-color: #ffe599ff;
   }
 
+/* フォームのCSS */
 label, select, input {
     /* フォントサイズ変更 */
     font-size: 15pt;
 }
 
-select{
-    /* width: 100%; */
-}
-
-h1,
-input[type="submit"] {
+/* タイトル・「作成」ボタンのCSS */
+h1, input[type="submit"] {
+    /* 要素を指定 */
     display: block;
     /* 中央揃え */
     text-align: center;
     /* サイズ変更 */
     width: 60%;
+    /* 中央寄せ */
     margin: 0 auto;
+    /* 丸みを持たせる */
     border-radius: 15px;
 }
 
+/* テーブル全体のCSS */
 table {
     /* 中央寄せ */
     margin: 0 auto;
 }
 
+/* 「作成」ボタンのCSS */
 .ipt{
+    /* 丸みを持たせる */
     border-radius: 10px;
+    /* 枠線の設定 */
     border: 2px solid #000000;
 }
