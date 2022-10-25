@@ -5,6 +5,6 @@ var search = document.getElementById("search").value;
 var sort = document.getElementById("sort").value;
 var maxResults = document.getElementById("maxResults").value;
 var range = document.getElementById("range").value;
-location.href = "next.html?data="+encodeURIComponent(name);
+location.href = "next.html?data="+encodeURIComponent(name + search + sort + maxResults + range);
     }
 }

@@ -2,10 +2,9 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
-
+    <title>Youtube CONNECTER</title>
     <link rel = "stylesheet" type = "text/css" href = "index.css">
     <script type="text/javascript" src="main.js"></script>
-    <title>Youtube CONNECTER</title>
 </head>
 <body>
     <div id="form">
@@ -19,13 +18,13 @@
             <!-- 検索ワード入力欄 -->
             <div class="formgroup" id="email-form">
             <label for="email">検索ワード</label>
-            <input type="search" id="q" name="q" name = "search" required  class = "ipt">
+            <input type="search" id="search" name="search" required  class = "ipt">
             </div>
     
             <!-- 絞り込み条件選択欄 -->
             <div class="formgroup" id="email-form">
             <label for="email">絞り込み条件</label>
-            <select  class = "ipt" name = "sort" style = "width: 250px; font-weight:bold;">
+            <select  class = "ipt" id = "sort" name = "sort" style = "width: 250px; font-weight:bold;">
               <option value = "viewCount">再生回数</option>
               <option value = "likeCount">高評価</option>
               <option value = "commentCount">コメント数</option>
@@ -42,7 +41,7 @@
                 <!-- 動画数は「1」から「50」までとする -->
                 <td><input  class = "ipt" name = "num" type="number" id="maxResults" name="maxResults" min="1" max="50" step="1" value="1" style = "font-weight:bold;"></td>
                 <td>       
-                    <select name = "range"  class = "ipt" style = "font-weight:bold; width: 120px;">
+                    <select name = "range"  class = "ipt" id = "range" style = "font-weight:bold; width: 120px;">
                     <option value = "public">公開</option>
                     <option value = "Unlisted">限定公開</option>
                     <option value = "private">非公開</option>
