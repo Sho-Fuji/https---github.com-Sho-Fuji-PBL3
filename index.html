@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+
     <link rel = "stylesheet" type = "text/css" href = "index.css">
+    <script type="text/javascript" src="main.js"></script>
     <title>Youtube CONNECTER</title>
 </head>
 <body>
     <div id="form">
-        <form method="POST" action = "#">
-
+        <form action="./setcss.cgi" method="get" name="mainForm">
             <!-- 再生リスト入力欄 -->
             <div class="formgroup" id="name-form">
             <label for="name">再生リスト名</label>
@@ -53,7 +52,7 @@
             <br>
             
             <!-- 送信ボタン -->
-            <input type = "submit" value = "作 　成" id = "btn">
+            <input type = "button" value = "作 　成" id="sendButton">
             <!-- <a href= "https://forms.gle/ihwJpM8ikRVmM1xd6" target="_blank" >意見フォーム</a> -->
         </form>
     </div>
